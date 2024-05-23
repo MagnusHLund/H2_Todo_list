@@ -1,0 +1,10 @@
+.navbar {
+  background-color: indigo;
+  height: 6.5vh;
+  display: flex;
+  &__button {
+    background-color: teal;
+    width: 5vw;
+    margin-left: 5vw;
+  }
+}

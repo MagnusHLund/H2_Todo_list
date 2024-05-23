@@ -1,3 +1,4 @@
+import './App.scss'
 import Navbar from './Components/Content/Navbar'
 import TodoList from './Components/Routes/TodoList'
 import HomePage from './Components/Routes/HomePage'
