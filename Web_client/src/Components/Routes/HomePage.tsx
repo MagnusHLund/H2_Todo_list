@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomePage.scss'
-import TodoListOption from '../Content/TodoListOption'
+import TodoListSelector from '../Content/TodoListSelector'
 import lists from './../../Data/Lists.json'
 
 const HomePage: React.FC = () => {
@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
       <h2 className="home-page__title">My todo lists:</h2>
       <div className="home-page__options--container">
         {lists.map((list) => (
-          <TodoListOption
+          <TodoListSelector
             key={list.name}
             listName={list.name}
             className="home-page__option"

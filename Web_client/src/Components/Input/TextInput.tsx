@@ -2,13 +2,13 @@ import StandardInputProps from './StandardInputProps'
 import './TextInput.scss'
 
 interface TextInputProps extends StandardInputProps {
-  text?: string
+  placeholder?: string
   className?: string
   multiLine?: boolean
 }
 
 const TextInput: React.FC<TextInputProps> = ({
-  text = '',
+  placeholder = '',
   className = '',
   multiLine = false,
   onChange,
@@ -16,14 +16,14 @@ const TextInput: React.FC<TextInputProps> = ({
   return multiLine ? (
     <textarea
       className={`text-input__multi ${className}`}
-      value={text}
+      placeholder={placeholder}
       onChange={onChange}
     />
   ) : (
     <input
       type="text"
       className={`text-input__single ${className}`}
-      placeholder="title"
+      placeholder={placeholder}
       onChange={onChange}
     />
   )

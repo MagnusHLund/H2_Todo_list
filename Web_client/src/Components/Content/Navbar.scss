@@ -1,11 +1,11 @@
 .navbar {
   background-color: indigo;
-  height: 6.5vh;
+  height: 5vh;
   display: flex;
-  padding: 0 10vw;
+  padding: 1vw 10vw;
+  gap: 1vw;
   &__button {
     background-color: teal;
     width: 3vw;
-    margin: 0.5vw;
   }
 }
