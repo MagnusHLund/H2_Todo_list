@@ -1,7 +1,10 @@
+import './Navbar.scss'
+import Button from '../Input/Button'
+
 const Navbar: React.FC = () => {
   return (
-    <div>
-      <button>+</button>
+    <div className="navbar">
+      <Button className="navbar__button">+</Button>
     </div>
   )
 }
