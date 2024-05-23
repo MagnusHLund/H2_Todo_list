@@ -10,21 +10,42 @@ const Navbar: React.FC = () => {
 
   const addNew = () => {
     if (currentPage.includes('/home')) {
-      console.log('Add new list, go to that list')
+      // TODO: If on the home page, add new list and go to the new list page
     } else {
-      console.log('Add new to-do item')
+      // TODO: If on a todo list page, add a new card to that page. It has to be added to the top and be within the "todo" column.
     }
+  }
+
+  const changeListName = () => {
+    /**  TODO:
+     * Get current list, based on the List ID
+     * Change the list name, within the json object.
+     * */
   }
 
   return (
     <div className="navbar">
-      <Button onclick={() => navigate('/home')}>
-        <Image src="/Firello icon.png" alt="Firello icon" />
+      <Button
+        onclick={() => navigate('/home')}
+        className="navbar__button"
+        transparent={true}
+      >
+        <Image
+          src="/Firello icon.png"
+          alt="Firello icon"
+          className="navbar__image"
+        />
       </Button>
       <Button className="navbar__button" onclick={addNew}>
         +
       </Button>
-      {currentPage.includes('/list') && <TextInput></TextInput>}
+      {currentPage.includes('/list') && (
+        <TextInput
+          multiLine={false}
+          placeholder="List title"
+          onChange={changeListName}
+        />
+      )}
     </div>
   )
 }

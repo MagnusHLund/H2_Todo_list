@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './HomePage.scss';
-import TodoListSelector from '../Content/TodoListOption';
+import TodoListSelector from '../Content/TodoListSelector'
 import lists from './../../Data/Lists.json';
 import { set, get } from '../../Data/SaveLocalStorage'; 
 
@@ -32,6 +32,7 @@ const HomePage: React.FC = () => {
     <div className="home-page">
       <h2 className="home-page__title">My todo lists:</h2>
       <div className="home-page__options--container">
+
         {loadedLists.map((list) => (
           <TodoListSelector
             key={list.name}
