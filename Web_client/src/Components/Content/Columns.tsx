@@ -1,5 +1,6 @@
 import React from 'react'
-import './DragDrop.scss'
+import './Columns.scss'
+import Card from './Card'
 
 const Columns: React.FC = () => {
   const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
@@ -23,30 +24,19 @@ const Columns: React.FC = () => {
   }
 
   return (
-    <div className="draggable-container">
-      <div
-        id="draggable-item"
-        className="draggable"
-        draggable
-        onDragStart={handleDragStart}
-      >
-        Drag me!
-      </div>
-      <div
-        id="drop-zone-1"
-        className="drop-zone"
-        onDrop={handleDrop}
-        onDragOver={handleDragOver}
-      >
-        Drop Zone 1
-      </div>
-      <div
-        id="drop-zone-2"
-        className="drop-zone"
-        onDrop={handleDrop}
-        onDragOver={handleDragOver}
-      >
-        Drop Zone 2
+    <div className="Columns-container">
+      <div className="draggable-container">
+        <div id="draggable-item" className="draggable" draggable onDragStart={handleDragStart}>
+          <Card title='indkøbsliste' bulletPoints={["æble", "pære", "banan"]} />
+        </div>
+        <div className="zone-container">
+          <p className="zone-title">Todo</p>
+          <div id="drop-zone-1" className="drop-zone" onDrop={handleDrop} onDragOver={handleDragOver} />
+        </div>
+        <div className="zone-container">
+          <p className="zone-title">Done</p>
+          <div id="drop-zone-2" className="drop-zone" onDrop={handleDrop} onDragOver={handleDragOver} />
+        </div>
       </div>
     </div>
   )

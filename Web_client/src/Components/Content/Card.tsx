@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.scss';
+import Button from './../Input/Button'
 
 interface CardProps {
     title: string;
@@ -15,6 +16,7 @@ const Card: React.FC<CardProps> = ({ title, bulletPoints }) => {
                     <li key={index} className="card-list-item">{point}</li>
                 ))}
             </ul>
+            <Button>Rediger</Button>
         </div>
     );
 };

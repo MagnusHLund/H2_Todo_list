@@ -1,24 +1,80 @@
+.Columns-container {
+  width: 100%;
+  height: 100vh; // Full height of the viewport
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; // Light background color for the whole container
+  padding: 20px;
+}
+
 .draggable-container {
-  width: 100vw;
+  width: 80%; // Set width of the container
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
 
-  .draggable {
-    padding: 32px;
-    background: #fff;
-    position: absolute;
-    top: 0px;
-    color: #000;
-  }
+.draggable {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: transform 0.2s;
+}
 
-  #drop-zone-2 {
-    background-color: aqua;
-  }
+.draggable:active {
+  transform: scale(1.05);
+}
 
-  .drop-zone {
-    height: 100vh;
-    width: 30vw;
-    padding: 32px;
-    background: #000;
-  }
+.zone-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%; // Each zone container takes up 48% of the width
+}
+
+.zone-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.drop-zone {
+  width: 100%;
+  height: 700px; 
+  border: 5px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: flex-start;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, border-color 0.3s;
+  padding-top: 20px;
+}
+
+.drop-zone:hover {
+  background-color: #f1f1f1;
+  border-color: #aaa;
+}
+
+.drop-zone.drag-over {
+  background-color: #e1e1e1;
+  border-color: #888;
+}
+
+p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+.Boobies{
+  height: 1vh;
+  width:  95%;
+  background-color: turquoise;
 }

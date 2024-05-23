@@ -1,11 +1,13 @@
 import './TodoList.scss'
 import Card from "./../Content/Card";
 import React from 'react';
+import Columns from './../Content/Columns';
 
 const TodoList: React.FC = () => {
   return <>
   
-  <Card title='hej' bulletPoints={["abe","Bæver","fis"]} />
+  
+  <Columns/>
   </>
 }
 
