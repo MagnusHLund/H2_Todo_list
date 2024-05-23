@@ -1,6 +1,7 @@
 import Navbar from './Components/Content/Navbar'
 import TodoList from './Components/Routes/TodoList'
 import HomePage from './Components/Routes/HomePage'
+import { Route } from 'react-router-dom'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Route path="Home" element={<HomePage />} />
       <Route path="*" element={<HomePage />} />
     </>
-  ) 
+  )
 }
 
 export default App
