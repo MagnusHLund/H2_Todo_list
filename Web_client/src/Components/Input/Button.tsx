@@ -1,19 +1,20 @@
 import StandardInputProps from './StandardInputProps'
+import { ReactNode } from 'react'
 import './Button.scss'
 
 interface ButtonProps extends StandardInputProps {
-  text?: string
+  children?: ReactNode
   className?: string
 }
 
 const Button: React.FC<ButtonProps> = ({
-  text = '',
+  children,
   className = '',
   onclick,
 }) => {
   return (
     <button className={`button ${className}`} onClick={onclick}>
-      {text}
+      {children}
     </button>
   )
 }
