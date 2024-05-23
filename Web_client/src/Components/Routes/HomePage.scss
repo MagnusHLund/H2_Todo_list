@@ -1,0 +1,23 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+  }
+  &__options {
+    &--container {
+      display: flex;
+      width: 95vw;
+      margin: 0 auto;
+      gap: 1vw;
+      overflow-x: auto;
+    }
+  }
+  &__option {
+    border-radius: 10%;
+    min-width: 12.5vw;
+  }
+}

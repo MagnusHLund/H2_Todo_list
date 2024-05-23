@@ -2,9 +2,10 @@
   background-color: indigo;
   height: 6.5vh;
   display: flex;
+  padding: 0 10vw;
   &__button {
     background-color: teal;
-    width: 5vw;
-    margin-left: 5vw;
+    width: 3vw;
+    margin: 0.5vw;
   }
 }
