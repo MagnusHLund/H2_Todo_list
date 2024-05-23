@@ -1,0 +1,28 @@
+[
+  {
+    "name": "List1",
+    "cards": {
+      "todo": [
+        { "title": "", "text": "" },
+        { "title": "", "text": "" }
+      ],
+      "done": [
+        { "title": "", "text": "" },
+        { "title": "", "text": "" }
+      ]
+    }
+  },
+  {
+    "name": "List2",
+    "cards": {
+      "todo": [
+        { "title": "", "text": "" },
+        { "title": "", "text": "" }
+      ],
+      "done": [
+        { "title": "", "text": "" },
+        { "title": "", "text": "" }
+      ]
+    }
+  }
+]
