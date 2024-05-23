@@ -3,12 +3,40 @@
     "name": "List1",
     "cards": {
       "todo": [
-        { "title": "", "text": "" },
-        { "title": "", "text": "" }
+        {
+          "title": "",
+          "text": [
+            { "option": "æble" },
+            { "option": "pære" },
+            { "option": "banan" }
+          ]
+        },
+        {
+          "title": "",
+          "text": [
+            { "option": "æble" },
+            { "option": "pære" },
+            { "option": "banan" }
+          ]
+        }
       ],
       "done": [
-        { "title": "", "text": "" },
-        { "title": "", "text": "" }
+        {
+          "title": "",
+          "text": [
+            { "option": "æble" },
+            { "option": "pære" },
+            { "option": "banan" }
+          ]
+        },
+        {
+          "title": "",
+          "text": [
+            { "option": "æble" },
+            { "option": "pære" },
+            { "option": "banan" }
+          ]
+        }
       ]
     }
   },
@@ -16,12 +44,40 @@
     "name": "List2",
     "cards": {
       "todo": [
-        { "title": "", "text": "" },
-        { "title": "", "text": "" }
+        {
+          "title": "",
+          "text": [
+            { "option": "æble" },
+            { "option": "pære" },
+            { "option": "banan" }
+          ]
+        },
+        {
+          "title": "",
+          "text": [
+            { "option": "æble" },
+            { "option": "pære" },
+            { "option": "banan" }
+          ]
+        }
       ],
       "done": [
-        { "title": "", "text": "" },
-        { "title": "", "text": "" }
+        {
+          "title": "",
+          "text": [
+            { "option": "æble" },
+            { "option": "pære" },
+            { "option": "banan" }
+          ]
+        },
+        {
+          "title": "",
+          "text": [
+            { "option": "æble" },
+            { "option": "pære" },
+            { "option": "banan" }
+          ]
+        }
       ]
     }
   }
