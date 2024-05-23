@@ -1,0 +1,25 @@
+
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    margin: 0 0 8px 0;
+    font-size: 1.25em;
+}
+
+.card-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.card-list-item {
+    margin-bottom: 4px;
+}
